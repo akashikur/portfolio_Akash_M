@@ -1,0 +1,45 @@
+:root {
+  --background: #e7efff;
+  --txt: #1f044c;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+  color: var(--txt);
+}
+
+.app {
+  background-color: var(--background);
+}
+a {
+  text-decoration: none;
+  color: var(--txt);
+}
+
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+@mixin table {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}

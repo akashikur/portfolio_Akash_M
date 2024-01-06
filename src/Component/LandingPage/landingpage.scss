@@ -1,0 +1,50 @@
+@import "../../App.scss";
+.home {
+  height: calc(100vh - 100px);
+  .wrapper {
+    max-width: 1266px;
+    height: 100%;
+    margin: auto;
+    .textContainer {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+
+      @include mobile {
+        height: 80%;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+      }
+      h2 {
+        letter-spacing: 10px;
+        font-size: 30px;
+        @include mobile {
+          letter-spacing: 5px;
+          font-size: 20px;
+        }
+      }
+      h1 {
+        font-size: 78px;
+        // color: black;
+        @include mobile {
+          font-size: 40px;
+        }
+      }
+      .buttons {
+        button {
+          padding: 10px 15px;
+          border: 1px solid var(--txt);
+          border-radius: 10px;
+          background-color: transparent;
+          color: var(--txt);
+          margin-right: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

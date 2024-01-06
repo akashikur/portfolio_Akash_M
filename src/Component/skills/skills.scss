@@ -1,0 +1,126 @@
+@import "../../App.scss";
+
+.skills {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  @include mobile {
+    justify-content: center;
+    row-gap: 50px;
+    padding: 0px 20px;
+  }
+
+  .about {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      width: 100%;
+    }
+
+    .media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      @include mobile {
+        width: 100%;
+      }
+      .icons {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        @include mobile {
+          width: 30px;
+          height: 30px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .imageContainer {
+      width: 200px;
+      height: 200px;
+      @include mobile {
+        width: 100px;
+        height: 100px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .textContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      line-height: 30px;
+      h1 {
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+      p {
+        @include mobile {
+          font-size: 13px;
+        }
+      }
+      @include mobile {
+        line-height: 20px;
+        row-gap: 10px;
+      }
+    }
+  }
+  .Skill {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    @include mobile {
+      width: 100%;
+      column-gap: 10px;
+      row-gap: 10px;
+    }
+
+    .cope {
+      width: 100%;
+      height: 100%;
+      border: 1px solid black;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: red;
+      background-size: "cover";
+      background-position: "center";
+    }
+
+    .skill-items {
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include mobile {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
