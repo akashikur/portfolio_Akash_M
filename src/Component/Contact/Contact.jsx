@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="textcontainer">
-        <h1>Let's woek together</h1>
+        <h1>Let's work together</h1>
         <div className="item">
           <h2>Mail</h2>
           <span>akashikur011@gmail.com</span>
