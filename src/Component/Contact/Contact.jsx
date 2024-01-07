@@ -4,6 +4,9 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.scss";
 import { toast } from "react-toastify";
+import linkidin from "../../image/linkidin.png";
+import github from "../../image/github.png";
+import { motion } from "framer-motion";
 const Contact = () => {
   const form = useRef();
 
@@ -34,12 +37,31 @@ const Contact = () => {
           <span>akashikur011@gmail.com</span>
         </div>
         <div className="item">
-          <h2>Address</h2>
-          <span>akashikur011@gmail.com</span>
-        </div>
-        <div className="item">
           <h2>Phone</h2>
           <span>8428446088</span>
+        </div>
+        <div className="item">
+          <h2>Social</h2>
+          <div className="item-con">
+            <motion.div whileHover={{ scale: 1.2 }}>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/akashm2002/"
+                rel="noreferrer"
+              >
+                <img src={linkidin} />
+              </a>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.2 }}>
+              <a
+                target="_blank"
+                href="https://github.com/akashikur"
+                rel="noreferrer"
+              >
+                <img src={github} />
+              </a>
+            </motion.div>
+          </div>
         </div>
       </div>
       <div className="formcontainer">
