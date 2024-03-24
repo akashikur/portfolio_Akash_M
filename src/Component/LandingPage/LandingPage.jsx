@@ -1,43 +1,31 @@
+/* eslint-disable react/no-unescaped-entities */
 import "./landingpage.scss";
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 const LandingPage = () => {
-  const role = "Web developer";
-
-  const containerVarient = {
-    initial: {},
-    animate: {
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const letterVarient = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-  };
-
   const buttonVarient = {
     initial: { scale: 1 },
     animate: { scale: 1.1 },
   };
+
   return (
     <div className="home">
       <div className="wrapper">
         <div className="textContainer">
-          <h2>Akash M</h2>
+          <h2>I'm Akash_M</h2>
           <h1>
-            <motion.span
-              variants={containerVarient}
-              initial="initial"
-              animate="animate"
-            >
-              {role.split("").map((letters, index) => (
-                <motion.span variants={letterVarient} key={index}>
-                  {letters}
-                </motion.span>
-              ))}
-            </motion.span>
+            <Typewriter
+              words={[
+                "Web developer",
+                "Frontend developer",
+                "MERN stack developer",
+              ]}
+              typeSpeed={70}
+              deleteSpeed={70}
+              delaySpeed={1200}
+              loop
+              cursor
+            />
           </h1>
           <div className="buttons">
             <a
@@ -49,6 +37,7 @@ const LandingPage = () => {
                 variants={buttonVarient}
                 initial="initial"
                 whileTap="animate"
+                whileHover="animate"
               >
                 Resume Download
               </motion.button>
@@ -58,6 +47,7 @@ const LandingPage = () => {
                 variants={buttonVarient}
                 initial="initial"
                 whileTap="animate"
+                whileHover="animate"
               >
                 Hire Me
               </motion.button>

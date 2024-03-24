@@ -4,8 +4,11 @@
   .wrapper {
     max-width: 1266px;
     height: 100%;
+    display: flex;
+    align-items: center;
     margin: auto;
     .textContainer {
+      flex: 1;
       height: 100%;
       width: 50%;
       display: flex;
@@ -19,21 +22,24 @@
         align-items: center;
         text-align: center;
       }
-      h2 {
-        letter-spacing: 10px;
-        font-size: 30px;
-        @include mobile {
-          letter-spacing: 5px;
-          font-size: 20px;
+    
+        h2 {
+          letter-spacing: 10px;
+          font-size: 30px;
+          @include mobile {
+            letter-spacing: 5px;
+            font-size: 20px;
+          }
         }
-      }
-      h1 {
-        font-size: 78px;
-        // color: black;
-        @include mobile {
-          font-size: 40px;
+        h1 {
+          font-size: 60px;
+          // color: black;
+          @include mobile {
+            font-size: 40px;
+          }
         }
-      }
+      
+     
       .buttons {
         button {
           padding: 10px 15px;
@@ -46,5 +52,6 @@
         }
       }
     }
+   
   }
 }

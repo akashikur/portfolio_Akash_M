@@ -47,7 +47,7 @@ const Skills = () => {
           >
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/akashm2002/"
+              href="https://www.linkedin.com/in/akashm2024/"
               rel="noreferrer"
             >
               <img src={linkidin} alt="linkidin" />
