@@ -29,7 +29,7 @@ const LandingPage = () => {
           </h1>
           <div className="buttons">
             <a
-              href="https://drive.google.com/file/d/1dJhToeKXBRmmeh0y5wQGiDgIu33dNBuo/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1T3sOtQAz25hJKvs6t2NvhMLB5SyMYVv4/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
             >
