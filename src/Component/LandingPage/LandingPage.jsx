@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./landingpage.scss";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 const LandingPage = () => {
   const buttonVarient = {
